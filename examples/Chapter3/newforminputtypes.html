@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Зураг 3.1: newforminputtypes.html -->
+<!-- Шинэ HTML5 input-н төрлүүд болон атрибутууд. -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML5-н input-н шинэ төрлүүд</title>
+	</head>
+	<body>
+		<h1>HTML5-н шинэ input-н төрлийн жишээ</h1>
+		<p>Энэ жишээ нь HTML5-н шинэ input-н төрлүүд, placeholder болон autofocus шинжүүдийг хэрхэн ажиллахыг үзүүлнэ.
+		</p>
+		<form method = "post" action = "http://www.deitel.com">
+			<p>
+				<label>Өнгө:
+					<input type = "color" autofocus />
+						(Hexadecimal code  #ADD8E6)
+				</label>
+			</p>
+			<p>
+				<labeL>Огноо:
+					<input type = "date" />
+						(mm/dd/yyyy)
+				</labeL>
+			</p>
+			<p>
+				<label>Огноо ба хугацаа:
+					<input type = "datetime" />
+						(mm/dd/yyyyThh:mm+ff:gg, Жишээ нь 2019-01-27T03:15)
+				</label>
+			</p>
+			<p>
+				<label>Орон нутгийн цаг:
+					<input type = "datetime-local" />
+						(mm/dd/yyyyThh:mm, Жишээ нь 2019-01-27T03:15)
+				</label>
+			</p>
+			<p>
+				<label>Емайл:
+					<input type = "email" placeholder = "name@domain.com"
+						required /> (name@domain.com)
+				</label>
+			</p>
+			<p>
+				<label>Сар:
+					<input type = "month" /> (yyyy-mm)
+				</label>
+			</p>
+			<p>
+				<label>Дугаар:
+					<input type = "number"
+						min = "0"
+						max = "7"
+						step = "1"
+						value = "4" />
+				</label> (0-с 7-н хооронд оруулна уу?)
+			</p>
+			<p>
+				<label>Муж:
+					0 <input type = "range"
+						min = "0"
+						max = "20"
+						value = "10" /> 20
+				</label>
+			</p>
+			<p>
+				<label>Хайлт:
+					<input type = "search" placeholder = "Хайлтын query" />
+				</label>
+			</p>
+			<p>
+				<label>Утас:
+					<input type = "tel" placeholder = "(###) ####-####"
+						pattern = "\(\d{3}\) +\d{4}-\d{4}" required />
+						(###) ####-####
+				</label>
+			</p>
+			<p>
+				<label>Хугацаа:
+					<input type = "time" /> (hh:mm:ss.ff)
+				</label>
+			</p>
+			<p>
+				<label>URL:
+					<input type = "url"
+						placeholder = "http://www.domainname.com" />
+						(http://www.domainname.com)
+				</label>
+			</p>
+			<p>
+				<label>Долоо хоног:
+					<input type = "week" />
+						(yyyy-Wnn, such as 2019-W01)
+				</label>
+			</p>
+			<p>
+				<input type = "submit" value = "Илгээх" />
+				<input type = "reset" value = "Цэвэрлэх" />
+			</p>
+		</form>
+	</body>
+</html>
+

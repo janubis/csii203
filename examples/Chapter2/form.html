@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<!-- Зураг 2.16: form.html -->
+<!-- Форм -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Форм</title>
+</head>
+
+<body>
+	<h1>Санал асуулга</h1>
+
+	<p>Дараах санал асуулгыг бөглөж биднийг үйлчилгээгээ
+	сайжруулахад туслана уу</p>
+
+	<!-- Формыг <form> тагаар нээх бөгөөд  -->
+	<!-- үүнд серверийн хаяг өгөгдлийг илгээх -->
+	<!-- аргыг тодорхойлж өгнө -->
+	<form method="post" action="">
+		<!-- hiiden төрөлтэй элементийг хөтөч дэлгэцлэхгүй боловч -->
+		<!-- утга нь серверлүү илгээгдэж байдаг. -->
+		<input type="hidden" name="recipient" value="news@num.edu.mn">
+		<input type="hidden" name="subject" value="Санал асуулга">
+		<input type="hidden" name="redirect" value="main.html">
+
+		<!-- <input type="text"> нь текстийн талбар оруулна -->
+		<p><label>Нэр:
+			<input type="text" name="name" size="25" maxlength="30">
+		</label></p>
+		<p>
+			<!-- input-ийн submit төрөл нь мэдээллийг серверт илгээх -->
+			<!-- товч үүсгэх бол reset төрөл нь формын мэдээллийг -->
+			<!-- цэвэрлэж анхны төлөвт оруулна -->
+			<input type="submit" name="Илгээх">
+			<input type="reset" name="Цэвэрлэх">
+		</p> 
+	</form>
+</body>
+</html>
+

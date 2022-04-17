@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Зураг 3.17: autocomplete.html -->
+<!-- HTML5 form autocomplete attribute ба datalist element. -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML5 autocomplete атрибут ба datalist элемент</title>
+	</head>
+	<body>
+		<h3>Autocomplete ба Datalist-н жишээ</h3>
+		<p>Энэ бормын жишээ нь HTML5 autocomplete аттрибутыг datalist элемент дээр 	
+			хэрхэн ашиглахыг харуулж байна. 
+		</p>
+		<!-- autocomplete-г on болгох -->
+		<form method = "post" >
+			<p><label>Овог:
+			<input type = "text" id = "lastName"
+				placeholder = "Овог" /> (Овог)
+			</label></p>
+			<p><label>Нэр:
+			<input type = "text" id = "firstName"
+ 				placeholder = "Нэр" /> (Нэр)
+			</label></p>
+			<p><label>Е-майл:
+			<input type = "email" id = "email"
+				placeholder = "name@num.ed.mn" /> (name@num.edu.mn)
+			</label></p>
+			<p><label for = "txtList">Төрсөн сар:
+			<input type = "text" id = "txtList"
+				placeholder = "Сарыг сонгоно уу" list = "months" />
+			<datalist id = "months">
+				<option value = "1-р сар">
+				<option value = "2-р сар">
+				<option value = "3-р сар">
+				<option value = "4-р сар">
+				<option value = "5-р сар">
+				<option value = "6-р сар">
+				<option value = "7-р сар">
+				<option value = "8-р сар">
+				<option value = "9-р сар">
+				<option value = "10-р сар">
+				<option value = "11-р сар">
+				<option value = "12-р сар">
+			</datalist>
+			</label></p>
+			<p><input type = "submit" value = "Илгээх" />
+			<input type = "reset" value = "Цэвэрлэх" /></p>
+		</form>
+	</body>
+</html>

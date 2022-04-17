@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<!-- Зураг 2.15: table2.html -->
+<!-- Мөр багана нэгтгэлтэй хүснэгт -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+
+<body>
+	<h1>Мөр багана нэгтгэх нь</h1>
+
+	<table border="1">
+		<caption>Мөр багана нэгтгэлтэй хүснэгт</caption>
+
+		<thead>
+			<!-- rowspan, colspan атрибутуудаар -->
+			<!-- мөр багана нэгтгэнэ. -->
+			<tr>
+				<!-- Хоёр мөрийг нэгтгэж байна -->
+				<th rowspan="2">
+					<img src="camel.png" width="205"
+					height="167" alt="Тэмээний зураг">
+				</th> 
+
+				<!-- Дөрвөн багана нэгтгэж байна -->
+				<th colspan="4">
+					<strong> Харьцуулалтууд</strong>
+				</th>
+			</tr>
+			<tr>
+				<th>Бөхний тоо</th>
+				<th>Амьдардаг газар</th>
+				<th>Тэжээмэл эсэх?</th>
+				<th>Ноос өгдөг эсэх?</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<th>Монгол тэмээ</th>
+				<td>2</td>
+				<td>Төв Ази</td>
+				<td>Тийм</td>
+				<td>Тийм</td>
+			</tr>
+			<tr>
+				<th>Лам гөрөөс</th>
+				<td>1</td>
+				<td>Андын нуруу</td>
+				<td>Тийм</td>
+				<td>Тийм</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

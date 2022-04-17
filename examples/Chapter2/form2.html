@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!-- Зураг 2.17: form2.html -->
+<!--  Формын олон төрлийн элементүүдийг ашиглах нь -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Олон үйлдэлт форм</title>
+</head>
+
+<body>
+	<h1>Санал асуулга</h1>
+	<p>Дараах санал асуулгыг бөглөж биднийг үйлчилгээгээ
+	сайжруулахад туслана уу</p>
+
+	<form method="post" action="">
+
+		<p><label>Нэр:
+			<input type="text" name="name" size="25" maxlength="30">
+		</label></p>
+
+		<!-- <input type="password" нь нууц үг оруулах талбар үүсгэнэ --> 
+		<p><label>Нууц үг:
+			<input type="password" name="Password" size="25">
+		</label></p>
+
+		<!-- <textarea> таг нь олон мөрт текст хайрцаг үүсгэнэ -->
+		<p><label>Сэтгэгдэл:<br>
+			<textarea name="comments" 
+			rows="4" cols="36">Сэтгэгдлээ энд үлдээнэ үү</textarea>
+		</label></p>
+
+		<p>
+			<strong>Таньд таалагдсан зүйлүүд:</strong><br>
+
+			<label>Хуудасны загвар
+				<input type="checkbox" name="thingsliked" value="Design"></label>
+			<label>Холбоосууд
+				<input type="checkbox" name="thingsliked" value="Links"></label>
+			<label>Хэрэглэхэд хялбар
+				<input type="checkbox" name="thingsliked" value="Ease"></label>
+			<label>Зургууд
+				<input type="checkbox" name="thingsliked" value="Images"></label>
+			<label>Эх код
+				<input type="checkbox" name="thingsliked" value="Code"></label>
+		</p>
+
+		<p>
+			<strong>Манай сайтыг хэрхэн олсон бэ?</strong><br>
+
+			<label>Хайлтын систем
+				<input type="radio" name="howtosite"
+					value="search engine" checked></label>
+			<label>Бусад веб хуудаснаас
+				<input type="radio" name="howtosite"
+					value="search engine" checked></label>
+			<label>Хайлтын систем
+				<input type="radio" name="howtosite"
+					value="link"></label>
+			<label>Номноос
+				<input type="radio" name="howtosite"
+					value="book"></label>
+			<label>Бусад
+				<input type="radio" name="howtosite"
+					value="other"></label>
+		</p>
+
+		<p>
+			<label>Манай хуудсыг үнэлнэ үү</label>
+
+			<select>
+				<option>5</option>
+				<option>5</option>
+				<option>5</option>
+				<option>5</option>
+				<option>5</option>
+			</select>
+		</p>
+		<p>
+			<input type="submit" name="Илгээх">
+			<input type="reset" name="Цэвэрлэх">
+		</p>
+	</form>
+</body>
+</html>

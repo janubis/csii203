@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<!-- Зураг 4.10: 4.10.html -->
+<!-- Элементүүдийн relative байршил. -->
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Relative Positioning</title>
+	<style type = "text/css">
+		p { 
+			font-size: 1.3em;
+			font-family: verdana, arial, sans-serif; 
+		}
+		span { 
+			color: red;
+			font-size: .6em;
+			height: 1em; 
+		}
+		.super { 
+			position: relative;
+			top: -1ex; 
+		}
+		.sub { 
+			position: relative;
+		bottom: -1ex; 
+		}
+		.shiftleft { 
+			position: relative;
+			left: -1ex; 
+		}
+		.shiftright { 
+			position: relative;
+			right: -1ex; 
+		}
+	</style>
+</head>
+<body>
+	<p>Энэ өгүүлбэрийн төгсгөлийн текст нь <span class = "super">дээр бичигдсэн</span>.</p>
+	<p>Энэ өгүүлбэрийн төгсгөлийн текст нь <span class = "sub">доор бичигдсэн</span>.</p>
+	<p>Энэ өгүүлбэрийн төгсгөлийн текст нь <span class = "shiftleft">зүүн тийш шилжсэн</span>.</p>
+	<p>Энэ өгүүлбэрийн төгсгөлийн текст нь <span class = "shiftright">баруун тийш шилжсэн</span>.</p>
+</body>
+</html>

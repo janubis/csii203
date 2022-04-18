@@ -1,0 +1,30 @@
+1 <!DOCTYPE html> 
+2 
+3 <!-- Fig. 13.8: focusblur.html --> 
+4 <!-- Demonstrating the focus and blur events. --> 
+5 <html> 
+6 <head> 
+7 <meta charset = "utf-8"> 
+8 <title>A Form Using focus and blur</title> 
+9 <link rel = "stylesheet" type = "text/css" href = "style.css"> 
+10 <script src = "focusblur.js"></script> 
+11 </head> 
+12 <body> 
+13 <form id = "myForm" action = ""> 
+14 <p><label class = "fixed" for = "name">Name:</label> 
+15 <input type = "text" id = "name" 
+16 placeholder = "Enter name"></p> 
+17 <p><label class = "fixed" for = "email">E-mail:</label> 
+18 <input type = "email" id = "email" 
+19 placeholder = "Enter e-mail address"></p> 
+20 <p><label>Click here if you like this site 
+21 <input type = "checkbox" id = "like"></label></p> 
+22 <p><label for = "comments">Any comments?</p> 
+23 <textarea id = "comments" 
+24 placeholder = "Enter comments here"></textarea> 
+25 <p><input id = "submit" type = "submit"> 
+26 <input id = "reset" type = "reset"></p> 
+27 </form> 
+28 <p id = "helpText"></p> 
+29 </body> 
+30 </html>

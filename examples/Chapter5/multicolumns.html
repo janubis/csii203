@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+ <!-- Fig. 5.17: multicolumns.html -->
+ <!-- Multicolumn text in CSS3. -->
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Multicolumns</title>
+	<style type = "text/css">
+		p{ margin:0.9em 0em; }
+		.multicolumns{
+			/* Баганын тоог 3-аар өгөх */
+			column-count: 3;
+			/* багана хоорондбн зайг 30px-аар өгөх */
+			column-gap: 30px;
+			/* Багана хооронд 1px хар шугам татах */
+			column-rule: 1px outset black;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Computers, Hardware and Software<h1/>
+	</header>
+	<div class = "multicolumns">
+		<p>A computer is a device that can perform computations and make
+		logical decisions phenomenally faster than human beings can.
+		Many of today's personal computers can perform billions of
+		calculations in one second&mdash;more than a human can perform
+		in a lifetime. Supercomputers are already performing thousands
+		of trillions (quadrillions) of instructions per second! To put
+		that in perspective, a quadrillion-instruction-per-second
+		computer can perform in one second more than 100,000
+		calculations for every person on the planet! And&mdash;these
+		"upper limits" are growing quickly!</p>
+		<p>Computers process data under the control of sets of
+		instructions called computer programs. These programs guide
+		the computer through orderly sets of actions specified by
+		</p>
+	</div>
+</body>
+</html>
+

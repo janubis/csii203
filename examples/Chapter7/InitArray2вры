@@ -1,0 +1,41 @@
+// Fig. 10.6: InitArray2.js
+2 // Initializing arrays with initializer lists.
+3 function start()
+4 {
+5 // Initializer list specifies the number of elements and
+6 // a value for each element.
+789
+10
+11 outputArray( "Array colors contains", colors,
+12 document.getElementById( "output1" ) );
+13 outputArray( "Array integers1 contains", integers1,
+14 document.getElementById( "output2" ) );
+15 outputArray( "Array integers2 contains", integers2,
+16 document.getElementById( "output3" ) );
+17 } // end function start
+18
+19 // output the heading followed by a two-column table
+20 // containing indices and elements of "theArray"
+21 function outputArray( heading, theArray, output )
+22 {
+23 var content = "<h2>" + heading + "</h2><table>" +
+24 "<thead><th>Index</th><th>Value</th></thead><tbody>";
+25
+26 // output the index and value of each array element
+27 var length = theArray.length; // get array's length once before loop
+28
+29 for ( var i = 0; i < length; ++i )
+30 {
+31 content += "<tr><td>" + i + "</td><td>" + theArray[ i ] +
+32 "</td></tr>";
+33 } // end for
+34
+35 content += "</tbody></table>";
+36 output.innerHTML = content; // place the table in the output element
+37 } // end function outputArray
+38
+39 window.addEventListener( "load", start, false );
+Fig. 10.6 | Initializing arrays with initializer lists.
+var colors = new Array( "cyan", "magenta","yellow", "black" );
+var integers1 = [ 2, 4, 6, 8 ];
+var integers2 = [ 2, , , 8 ];

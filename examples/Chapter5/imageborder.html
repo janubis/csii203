@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<!-- Зураг 5.6: imageborder.html -->
+<!-- Зурган хүрээ үүсгэх нь. -->
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Зурган хүрээ</title>
+	<style type = "text/css">
+		div{
+			border: 30px solid transparent;
+			width: 234px;
+			padding: 20px 20px;
+			text-align: center
+		}
+		#stretch{
+  			border-image: url(border.png) 50 50 50 50 stretch;
+		}
+		#repeat{
+			border-image:url(border.png) 32% repeat;
+		}
+		#round{
+			border-image:url(border.png) 32% round;
+		}
+		#space{
+			border-image:url(border.png) 32% space;
+		}
+	</style>
+</head>
+<body>
+	<h2>Зурган хүрээ</h2>
+	<img src = "border.png" alt = "image used to demonstrate borders">
+	<p><div id="stretch">Stretch</div></p>
+	<p><div id="repeat">Repeat</div></p>
+	<p><div id="round">Round</div></p>
+	<p><div id="space">Space</div></p>
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.11: animation.html -->
+<!-- Анимейшн -->
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Анимейшн</title>
+	<style type = "text/css">
+		img{
+			position: relative;
+			animation: movingImage linear 10s 2 1s alternate;
+		}
+		@keyframes movingImage{
+			0% {opacity: 0; left: 50px; top: 0px;}
+			25% {opacity: 1; left: 0px; top:5 0px;}
+			50% {opacity: 0; left: 50px; top: 100px;}
+			75% {opacity: 1; left: 100px; top: 50px;}
+			100% {opacity: 0; left: 50px; top: 0px;}
+		}
+</style>
+</head>
+<body>
+	<img src = "logo.png" width = "150" height = "150"
+		alt = "Монгол улсын их сургууль">
+	<div></div>
+</body>
+</html>
+

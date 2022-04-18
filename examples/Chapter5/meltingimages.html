@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.14: meltingimages.html -->
+<!-- Зураг хоорондын шилжилт. -->
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Melting Images</title>
+	<style type = "text/css">
+		#cover{
+			position: relative;
+			margin: 0 auto;
+		}
+		#cover img{
+			position: absolute;
+			left: 0;
+			transition: opacity 4s ease-in-out;	
+		}
+		#cover img.top:hover{ opacity:0; }
+	</style>
+</head>
+<body>
+	<div id = "cover">
+		<img class = "bottom" src = "logo1.png" alt = "МУИС" 
+			width="150" height="150">
+		<img class = "top" src = "logo.png" alt = "МУИС"
+			width="150" height="150">
+	</div>
+</body>
+</html>
+

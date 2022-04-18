@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!-- Зураг 12.4: dom.html -->
+<!-- ДОМ-тай ажиллах. -->
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>ДОМ-тай ажиллах</title>
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+		<script src = "dom.js"></script>
+	</head>
+	<body>
+		<h1 id = "bigheading" class = "highlighted">
+			[bigheading] DHTML Обьект Модел</h1>
+		<h3 id = "smallheading">[smallheading] Элементтнй ажиллах</h3>
+		<p id = "para1">[para1] Документ Обьект Модел (ДОМ) нь 
+			жаваскриптээс HTML5 хуудасны элементүүдтэй хурдан, динамикаар
+			ажиллах боломжийг олгоно.</p>
+		<p id = "para2">[para2] Жаваскрипт болон ДОМ-ын талаарх
+			нэмэлт тайлбар, жишээнүүдийг 
+		<a id = "link" href = "https://www.w3schools.com/js/">
+			[link] хаягаар зочилж үзээрэй.</a></p>
+		<p id = "para3">[para3] Доорх товчнууд жагсаалттай ажиллана.</p>
+		<ul id = "list">
+			<li id = "item1">[item1] getElementById ба parentNode</li>
+			<li id = "item2">[item2] insertBefore ба appendChild</li>
+			<li id = "item3">[item3] replaceChild ба removeChild</li>
+		</ul>
+		<div id = "nav" class = "nav">
+			<form onsubmit = "return false" action = "#">
+				<p><input type = "text" id = "gbi" value = "bigheading">
+				<input type = "button" value = "id-аар сонгох"
+					id = "byIdButton"></p>
+				<p><input type = "text" id = "ins">
+				<input type = "button" value = "Өмнө нь оруулах"
+					id = "insertButton"></p>
+				<p><input type = "text" id = "append">
+				<input type = "button" value = "Хүүхэд нэмэх"
+					id = "appendButton"></p>
+				<p><input type = "text" id = "replace">
+				<input type = "button" value = "Сонгогдсоныг дарах"
+					id = "replaceButton()"></p>
+				<p><input type = "button" value = "Сонгогдсоныг устгах"
+					id = "removeButton"></p>
+				<p><input type = "button" value = "Эцгийг сонгох"
+					id = "parentButton"></p>
+			</form>
+		</div>
+	</body>
+</html>

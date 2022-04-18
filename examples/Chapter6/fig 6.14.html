@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<!-- Зураг 6.7: addition.html -->
+<!-- Тэнцүү болон жиших операторууд. -->
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Тэнцүү болон жиших операторууд.</title>
+		<script type="text/javascript">
+			<!--
+			var name; // Хэрэглэгчээс оруулах эхний тэмдэгт мөр
+			var now = new Date(); //Одоогийн цаг ба өдөр
+			var hour = now.getHours();//Одоогийн цаг(0-23)
+			
+			// Хэрэглэгчээс эхний тэмдэгт мөр унших 
+			name = window.prompt( "Нэрээ оруулна уу" );
+
+			// Өглөө эсэхийг тодорхойл
+			if(hour < 12)
+				document.write( "<h1>Өглөөний мэнд " );
+
+			// Цаг PM эсэхийг шалга
+			if(hour >= 12)
+			{
+				//12 цаг руу хөрвүүл
+				hour = hour -12;
+
+				//6-аас өмнө гэдгийг шалга
+				if(hour < 6 )
+					document.write( "<h1>Өдрийн мэнд " );
+
+				//6-аас хойш гэдгийг шалга
+				if(hour >= 6 )
+					document.write( "<h1>Оройн мэнд " );
+			} //if-ийн төгсгөл
+
+			document.writeln(name +
+				",</h1><h1> Жаваскрипт програмчлалд тавтай морил! </h1>" );
+			// -->
+		</script>
+	</head><body></body>
+</html>
+

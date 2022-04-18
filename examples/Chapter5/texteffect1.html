@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!-- Зураг 5.7: texteffect1.html -->
+<!-- Текст эффект -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Текст эффект</title>
+	<style type="text/css">
+		p{
+			width: 150px;
+			border: 1px solid #000;	
+		}
+		.text1{
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: clip;
+		}
+		.text2{
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		.text3{
+			word-break: keep-all;
+		}
+		.text4{
+			word-break: break-all;
+		}
+	</style>
+</head>
+<body>
+	<h3>Text overflow</h3>
+	<p class="text1">Эрдмийн хэт цахиваас Хөгжлийн гал бадармой.</p>
+	<p class="text2">Эрдмийн хэт цахиваас Хөгжлийн гал бадармой.</p>
+	<h3>Word breaking</h3>
+	<p class="text3">Эрдмийн хэт цахиваас Хөгжлийн гал бадармой.</p>
+	<p class="text4">Эрдмийн хэт цахиваас Хөгжлийн гал бадармой.</p>
+</body>
+</html>
+
+

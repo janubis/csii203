@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<!-- Дасгал 9.2: cube.html -->
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Хамрах хүрээ</title>
+	<script>
+		var x;
+
+		function output()
+		{
+			for (x= 1; x <= 10; x++ )
+			document.writeln( "<p>" + cube( x ) + "</p>" );
+		} // output функцын төгсгөл
+
+		function cube( y )
+		{
+			return y * y * y;
+		} // cube функцын төгсгөл
+
+		window.addEventListener( "load", output, false );
+	</script>
+24 </head><body></body>
+25 </html>
+
+

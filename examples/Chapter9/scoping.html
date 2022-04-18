@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<!-- Зураг. 9.7: scoping.html -->
+<!-- Хамрах хүрээний жишээ. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Хамрах хүрээний жишээ</title>
+      <style type = "text/css">
+         p       { margin: 0px; }
+         p.space { margin-top: 10px; }
+      </style>
+      <script>
+         var output; // дэлгэцэнд гарах стрингийг хадгална
+         var x = 1; // глобал хувьсагч
+
+         function start()
+         {
+            var x = 5; // start функцын глобал хувьсагч
+
+            output = "<p>local x анхны утга  " + x + "</p>";
+
+            functionA(); // functionA-д локал х хувьсагч байгаа
+            functionB(); // functionB глобал хувьсагч x-ийг ашиглана
+            functionA(); // functionA локал хувьсагч x-ийг дахин зарлана
+            functionB(); // глобал хувьсагч х өөрийн утгаа хадгална
+            output += "<p class='space'>локал x анхны утга " + x + 
+               "</p>";
+            document.getElementById( "results" ).innerHTML = output;
+         } // end function start
+
+         function functionA()
+         {
+            var x = 25; // functionA дуудагдах бүрт х хувьсагч дахин зарлагдана
+
+            output += "<p class='space'>functionA функц эхлэхэд локал x-ийн утга: " + x;
+            ++x;
+            output += "<p>functionA төгсөхөд локал x-ийн утга: " + x;
+         } // functionA функцын төгсгөл
+
+         function functionB()
+         {
+            output += "<p class='space'>functionB функц эхлэхэд глобал x-ийн утга: " + x;
+            x *= 10;
+            output += "<p>functionA төгсөхөд глобал x-ийн утга: " + x;
+         } // functionB функцын төгсгөл
+
+         window.addEventListener( "load", start, false );
+      </script>
+   </head>
+   <body onload = "start()">
+      <div id = "results"></div>
+   </body>
+</html>

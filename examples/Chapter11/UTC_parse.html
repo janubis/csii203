@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<button onclick="myFunction()">Жишээг харуулах</button>
+
+			<p id="demo1"></p>
+			<p id="demo2"></p>
+			<p id="demo3"></p>
+			<p id="demo4"></p>
+
+		<script type="text/javascript">
+			function myFunction() {
+				  var d = Date.UTC(2019, 09, 30);
+				 	 document.getElementById("demo1").innerHTML = d;
+				  var d = Date.parse(2019, 09, 30);
+				  	document.getElementById("demo2").innerHTML = d;
+				  var d1=new Date(1572393600000);
+				   	document.getElementById("demo3").innerHTML = d1;
+				  var d1=new Date(1546300800000);
+				   	document.getElementById("demo4").innerHTML = d1;
+			 }
+		</script>
+	</body>
+</html>

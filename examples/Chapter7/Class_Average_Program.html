@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Sentinel-хяналттай давталтаар дундаж дүнг тооцооолох. -->
+<html>
+	<head>
+	<meta charset = "utf-8">
+	<title>Дундаж дүнг тооцоолох: Sentinel-хяналттай давталт</title>
+	<script>
+	var total; // дүнгийн нийлбэр
+	var gradeCounter; // Оруулсан дүнгийн тоо
+	var grade; // Хэрэглэгчийн оруулсан дүн (string-р)
+	var gradeValue; // integer буюу тоо руу хөрвүүлсэн дүн
+	var average; // Бүх дүнгүүдийн дундаж
+		// Анхны утгуудыг олгож алхам
+	total = 0; // total хувьсагчид 0 утгыг хийх
+	gradeCounter=0	// давталтыг бэлтгэх
+		// боловсруулах алхам
+		// Хэрэглэгчээс дүнгийн мэдээлэл авах prompt диалог
+	grade = window.prompt(
+	"Дүнгийн мэдээллийг тоогоор оруул, -1 -г оруулбал дуусна.:", "0" );
+	// Дүнг string-с integer рүү хөрвүүлэх
+	gradeValue = parseInt( grade );
+	while ( gradeValue != -1 )
+		// total хувьсагч руу gradeValue буюу дүнг нэмэх
+		total = total + gradeValue;
+	// gradeCounter-г 1-р нэмэх
+	gradeCounter = gradeCounter + 1;
+	// prompt for input and read grade from user
+	grade = window.prompt(
+		"Дүнгийн мэдээллийг тоогоор оруул, -1 -г оруулбал дуусна.:", "0"  );
+	// Дүнг string-с integer рүү хөрвүүлэх
+	gradeValue = parseInt( grade );
+		  // while-н төгсгөл
+ 	// Төгсгөх алхам
+	if ( gradeCounter != 0 )
+	{
+		average = total / gradeCounter;
+		// Дундаж дүнг дэлгэцэнд харуулах
+		document.writeln(
+		"<h1>Дундаж дүн бол " + average + "</h1>" );
+	} // if-н төгсгөл
+	else
+		document.writeln( "<p>Дүн оруулаагүй байна.</p>" );
+	</script>
+</head><body></body>
+</html>

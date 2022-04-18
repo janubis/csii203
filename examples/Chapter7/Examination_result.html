@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- Fig. 7.11: analysis.html -->
+<!-- Examination-results calculation. -->
+<html>
+	<head>
+	<meta charset = "utf-8">
+	<title>Шалгалтын дүнд шинжилгээ хийх</title>
+	<script>
+	
+		// Хувьсагчдын анхны утгыг олгож байна.
+		var passes = 0; // тэнцсэн дүнг тоолох
+		var failures = 0; // тэнцээгүйг тоолох
+		var student = 1; // оюутныг тоолох
+		var result; // шалгалтын үр дүн
+		// 10 оюутанг тоолууран суурьт давталтаар тоолох давталт
+		while ( student <= 10 )
+		{
+			result = window.prompt( "Үр дүнг оруулна уу (1=Тэнцсэн,2=Тэнцээгүй)", "0" );
+			if ( result == "1" )
+				passes = passes + 1;
+			else
+				failures = failures + 1;
+			student = student + 1;
+		} // while төгсгөл
+
+		// Төгсгөх хэсэг
+		document.writeln( "<h2>Шалгалтын үр дүн</h2>" );
+		document.writeln( "<p>Тэнцсэн: " + passes +
+			"; Тэнцээгүй: " + failures + "</p>" );
+		if ( passes > 8 )
+			document.writeln( "<p>Багшид бонус өгөх !</p>" );
+    </script>
+  </head><body></body>
+</html>

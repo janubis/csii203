@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<!-- Зураг. 9.2: SquareInt.html -->
+<!-- Хэрэглэгчийн тодорхойлсон квадрат олох функц. -->
+<html>
+<head>
+	<meta charset = "utf-8">
+    <title>Хэрэглэгчийн тодорхойлсон квадрат олох функц</title>
+	<style type = "text/css">
+          p { margin: 0; }
+    </style>
+	<script>
+
+        document.writeln( "<h1>1-ээс 10 хүртэлх тоонуудын квадрат</h1>" );
+
+		// 1-ээс 10 хүртэлх тоонуудын квадратыг олох нь
+		for ( var x = 1; x <= 10; ++x )
+			document.writeln( "<p>" + x + " -ийн квадрат нь " +
+				square( x )+ "</p>" );
+
+		// square функц нь зөвхөн дуудсан тохиолдолд ажиллана.
+
+		function square( y ) {
+		    return y*y;
+		}
+
+	</script>
+</head><body></body> <!-- хоосон body элемент -->
+</html>

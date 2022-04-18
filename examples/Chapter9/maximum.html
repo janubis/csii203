@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Зураг. 9.3: maximum.html -->
+<!-- Хэрэглэгчийн тодорхойлсон хамгийн ихийг олох функц. -->
+<html>
+<head>
+	<meta charset = "utf-8">
+    <title>Maximum of Three Values</title>
+	<style type = "text/css">
+        p { margin: 0; }
+    </style>
+	<script>
+
+        var input1 = window.prompt( "Эхний тоог оруул", "0" );
+		var input2 = window.prompt( "Хоёр дахь тоог оруул", "0" );
+		var input3 = window.prompt( "Гурав дахь тоог оруул", "0" );
+
+		var value1 = parseFloat( input1 );
+		var value2 = parseFloat( input2 );
+		var value3 = parseFloat( input3 );
+		var maxValue = maximum( value1, value2, value3 );
+		document.writeln( "<p>Эхний тоо: " + value1 + "</p>" +
+		"<p>Хоёр дахь тоо: " + value2 + "</p>" +
+		"<p>Гурав дахь тоо: " + value3 + "</p>" +
+		"<p>Хамгийн их нь: " + maxValue + "</p>" );
+
+		function maximum( x, y, z ){
+		    return Math.max( x, Math.max( y, z ) );
+		}
+	</script>
+</head><body></body>
+</html>

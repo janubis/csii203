@@ -1,0 +1,25 @@
+// Fig. 10.12: RandomPicture2.js
+// Массив ашиглан санамсаргүйгээр зураг үзүүлэгч
+var iconImg;
+var pictures = [ "Microsoft", "Amazon", "Apple", "Alphabet", "Facebook"]
+var descriptions = [ "Майкрософт нь Cloud Computing Technologies-ийн шийдлүүдийг түлхүү санал болгож байна.",
+	"Amazon.COM бол дэлхийн хамгийн том цахим худалдааны портал юм.", "Apple компани нь эцсийн бүтээгдэхүүн", 
+	+"өндөр баталгаатай бүтээгдэхүүнийг хэрэглэгчдэд хүргэх чиглэлээр тэргүүлэгч юм.",
+	"Alphabet Inc нь Технологийн компани бөгөөд Google-ийн толгой компани юм.",
+	 "Facebook бол дэлхийн хамгийн том сошиал медиа сүлжээ юм." ];
+// Хулганаар дарахад харгалзах зураг, тайлбар санам саргүйгээр гарах
+// body дээрх img таг 
+function pickImage()
+{
+	var index = Math.floor( Math.random() * 7 );
+	iconImg.setAttribute( "src", pictures[ index ] + ".png" );
+	iconImg.setAttribute( "alt", descriptions[ index ] );
+} // function pickImage-н төгсгөл
+
+// iconImg-г  click event handler-т бүртгүүлэх
+function start()
+{
+	iconImg = document.getElementById( "iconImg" );
+	iconImg.addEventListener( "click", pickImage, false );
+} // function start-н төгсгөл
+window.addEventListener( "load", start, false );

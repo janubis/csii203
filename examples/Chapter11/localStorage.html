@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="result"></div>
+<div id="searches"></div>
+
+<script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+  // Store
+  localStorage.setItem("lastname", "Smith");
+  // Retrieve
+  document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+} else {
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+
+	if ( !sessionStorage.getItem( "herePreviously"))
+	{
+		sessionStorage.setItem( "herePreviously", "true" );
+			document.getElementById( "welcomeMessage" ).innerHTML =
+		"Welcome to the Favorite Twitter Searches App";
+	} // end if
+
+	var length =localStorage.length; // number of key/value pairs
+	tags = []; // create empty array
+
+	// load all keys
+	for (var i = 0; i < length; ++i)
+	{
+		tags[i] = localStorage.key(i);
+	} // end for
+
+	tags.sort(); // sort the keys
+
+	var markup = "<ul>"; // used to store search link markup
+	var url = "http://search.twitter.com/search?q=";
+	// build list of links
+	for (var tag in tags)
+	{
+		var query = url + localStorage.getItem(tags[tag]) ;
+		markup += "<li><span><a href = '" + query + "'>" + tags[tag] +
+		"</a></span>" +
+		"<input id = '" + tags[tag] + "' type = 'button' " +
+		"value = 'Edit' onclick = 'editTag(id '>" +
+		"<input id = '" + tags[tag] + "' type = 'button' " +
+		"value = 'Delete' onclick = 'deleteTag(id) '>";
+	} // end for
+
+	markup += "</ul>";
+	document.getElementById("searches").innerHTML = markup;
+
+</script>
+
+</body>
+</html>

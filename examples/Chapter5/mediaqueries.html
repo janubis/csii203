@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+ <!-- Fig. 5.18: mediaqueries.html -->
+ <!-- Using media queries to reformat a page based on the device width. -->
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Media Queries</title>
+	<style type = "text/css">
+		p{ margin: 0.9em 0em; }
+		/* 480px болон түүнээс бага дэлгэцийн өргөнтэй ухаалаг утсанд хэрэгжих дүрмүүд*/
+		@media handheld and (max-width: 480px),
+		screen and (max-device-width: 480px),
+		screen and (max-width: 480px){
+			div{
+				column-count: 1;
+			}
+		}
+		/* 481px-ээс 1024px хүртэлх дэлгэцийн өргөнтэй төхөөрөмжинд хэрэгжих дүрмүүд*/
+		@media only screen and (min-width: 481px) 
+		and (max-width: 1024px){
+			div{
+				column-count: 2;
+				column-gap: 30px;
+				column-rule: 1px outset black;
+			}
+		}
+		/* 1025px болон түүнээс дээш дэлгэцийн өргөнтэй төхөөрөмжинд хэрэгжих дүрмүүд */
+		@media only screen and (min-width: 1025px){
+			div{
+				column-count: 3;
+				column-gap: 30px;
+				column-rule: 1px outset black;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Computers, Hardware and Software</h1>
+	</header>
+	<div>
+		<p>A computer is a device that can perform computations and make
+		logical decisions phenomenally faster than human beings can.
+		Many of today's personal computers can perform billions of
+		calculations in one second&mdash;more than a human can perform
+		in a lifetime. Supercomputers are already performing thousands
+		of trillions (quadrillions) of instructions per second! To put
+		that in perspective, a quadrillion-instruction-per-second
+		computer can perform in one second more than 100,000
+		calculations for every person on the planet! And&mdash;these
+		"upper limits" are growing quickly!</p>
+		<p>Computers process data under the control of sets of
+		instructions called computer programs. These programs guide
+		the computer through orderly sets of actions specified by
+		people called computer programmers. The programs that run on a
+		computer are referred to as software. In this book, you'll
+		learn today's key programming methodology that's enhancing
+		programmer productivity, thereby reducing software-development
+		costs&mdash;object-oriented programming.</p>
+	</div>
+</body>
+</html>
+

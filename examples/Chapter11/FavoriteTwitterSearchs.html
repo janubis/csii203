@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<!-- Зур. 11.18: FavoriteTwitterSearchs.html -->
+<!-- Twitter-с хайсан дуртай зүйлийн вэб сайт. -->
+<html>
+	<head>
+		<title>Twitter-н хайлт</title>
+		<link rel = "stylesheet" type = "text/css" href = "styletwitter.css">
+		<script src = "FavoriteTwitterSearches.js"></script>
+		</head>
+	<body>
+		<h1>Хайх дуртай зүйлүүд</h1>
+		<p id = "welcomeMessage"></p>
+		<form action = "#">
+		<p><input id = "query" type = "text"
+		placeholder = "Twitter-с хайх зүйлээ бичнэ үү">
+		<a href = "https://twitter.com/search?q=">
+		Twitter-н хайлтын операторууд</a></p>
+		<p><input id = "tag" type = "text" placeholder = "Хайх таг">
+		<input type = "button" value = "Хадгалах"
+		id = "saveButton">
+		<input type = "button" value = "Бүгдийг цэвэрлэх"
+		id = "clearButton"></p>
+		</form>
+		<h1>Өмнө хадгалсан зүйлүүд</h1>
+		<div id = "searches"></div>
+
+	</body>
+</html>
